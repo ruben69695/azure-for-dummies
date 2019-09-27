@@ -56,4 +56,14 @@ Azure App Service nos permite crear y hospedar aplicaciones web, back-ends móvi
 - GitHub
 - Bitbucket
 - Dropbox
-- OneDrive
+
+# Azure Functions
+Azure Functions es un servicio de proceso sin servidor que nos permite ejecutar código a petición sin necesidad de aprovisionar ni administrar explicitamente una infraestructura. Normalmente se usa para ejecutar scripts o fragmentos de código en respuesta a diversos eventos.
+
+## Eventos compatibles
+- HTTP
+- Temporizadores
+- Azure Cosmos DB
+- Blob
+- Cola
+
