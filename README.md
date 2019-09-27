@@ -52,6 +52,7 @@ Azure App Service nos permite crear y hospedar aplicaciones web, back-ends móvi
 - FTP
 - Git Local
 - Azure DevOps
+- Jenkins (mediante plugin)
 - GitHub
 - Bitbucket
 - Dropbox
