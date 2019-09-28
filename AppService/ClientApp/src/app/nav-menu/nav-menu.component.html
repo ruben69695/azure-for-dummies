@@ -1,0 +1,50 @@
+<header>
+  <nav
+    class="navbar navbar-todo navbar-expand-sm navbar-toggleable-sm navbar-dark box-shadow fixed-top"
+  >
+    <div class="container">
+      <a class="navbar-brand navbar-todo-brand" [routerLink]="['/']">.NET Core & Angular in Azure</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item navbar-todo-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item navbar-todo-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/counter']"
+              >Counter</a
+            >
+          </li>
+          <li class="nav-item navbar-todo-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/fetch-data']"
+              >Fetch data</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Azure for Dummies</h1>
+    <p class="lead">Este es un ejemplo de aplicación web SPA desarrollada con ASP.NET Core 2.2 y Angular 8</p>
+  </div>
+</div>
