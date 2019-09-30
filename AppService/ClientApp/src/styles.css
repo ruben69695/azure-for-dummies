@@ -14,3 +14,8 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.hero-card {
+  margin: 1rem 0.8rem 1rem 0rem;
+  flex: 1 20rem;
+  justify-content: space-between; }

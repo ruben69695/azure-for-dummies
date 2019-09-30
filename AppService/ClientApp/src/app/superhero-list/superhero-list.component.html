@@ -1,0 +1,11 @@
+<div class="container">
+    <app-superhero-form></app-superhero-form>
+</div>
+<hr />
+<div class="container">
+    <h4>Lista de Vengadores</h4>
+    <div class="d-flex flex-row flex-wrap">
+        <app-superhero-card *ngFor="let hero of heroService.superheroes"
+            [superHero]="hero" (heroCreated)="onHeroCreated($hero)"></app-superhero-card>
+    </div>
+</div>

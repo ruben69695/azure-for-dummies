@@ -1,0 +1,17 @@
+/* hero Card Styles */
+.hero-card-title {
+    margin: 0 0 0 0; }
+
+.hero-card-body {
+    margin-top: 1rem;
+    height: auto; }
+
+/* Button Styles */
+.btn-hero {
+    color: #FFFFFF;
+    background-color: #f50057;
+    width: 100%;
+    border-radius: 0; }
+
+.hero-card-button-container {
+    padding: 0; }

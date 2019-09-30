@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AppService.Core.Interfaces;
+using AppService.Core.Models;
 using AppService.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -33,9 +36,33 @@ namespace AppService.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]Superhero hero)
-        {
+        public async Task<IActionResult> Post([FromBody]Superhero hero) {
+            hero.ImageUrl = Path.Combine("images", hero.ImageUrl);
             await _heroRepo.UpdateAsync(hero);
+            return Ok();
+        }
+
+        [HttpPost("uploadImage")]
+        public async Task<IActionResult> Post([FromForm]IFormFile file)
+        {
+            System.Console.WriteLine(file);
+            string folderName = "wwwroot/images";
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+
+            if (!Directory.Exists(filePath))
+            {
+                Directory.CreateDirectory(filePath);
+            }
+
+            if (file != null && file.Length > 0) 
+            {
+                string finalDestination = Path.Combine(filePath, file.FileName);
+                using (var stream =  new FileStream(finalDestination, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+            }
+
             return Ok();
         }
     }
