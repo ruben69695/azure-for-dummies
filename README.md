@@ -62,42 +62,42 @@ Lo que vamos hacer ahora, es una pequeña demo de como subir una aplicación web
 
 1. Abrimos el proyecto con vscode y iniciamos sesión en nuestra cuenta de Microsoft dentro del IDE.
 
-![Inicio de sesión](https://i.ibb.co/h9zLx0g/1.png)
-![Reedirección al navegador](https://i.ibb.co/J5P6QdM/2.png)
+<!-- ![Inicio de sesión](https://i.ibb.co/h9zLx0g/1.png)
+![Reedirección al navegador](https://i.ibb.co/J5P6QdM/2.png) -->
 
 2. Ahora, en el explorado de Azure App Service, le damos a la flecha azul para indicar una subida. Y luego le damos a "Create new web app".
 
-![Upload](https://i.ibb.co/1Xk5dwC/4.png)
-![Crear nuevo app service](https://i.ibb.co/rQwmk1b/3-5.png)
+<!-- ![Upload](https://i.ibb.co/1Xk5dwC/4.png)
+![Crear nuevo app service](https://i.ibb.co/rQwmk1b/3-5.png) -->
 
 3. Le ponemos un nombre a nuestro nuevo app service
 
-![App service name](https://i.ibb.co/z7cSKYR/5.png)
+<!-- ![App service name](https://i.ibb.co/z7cSKYR/5.png) -->
 
 4. Creamos un nuevo recurso si no tenemos uno previo creado
 
-![Group resource](https://i.ibb.co/c6trq4X/6.png)
+<!-- ![Group resource](https://i.ibb.co/c6trq4X/6.png) -->
 
 5. Seleccionamos el sistema operativo para el App Service, en mi caso quiero que corra en Linux.
 
-![Seleccion sistema operativo](https://i.ibb.co/w0YLhPY/7.png)
+<!-- ![Seleccion sistema operativo](https://i.ibb.co/w0YLhPY/7.png) -->
 
 6. Seleccionamos el ejecutable con el que se ejecutará nuestra aplicación, en mi caso .NET Core 2.2
 
-![Escoger runtime](https://i.ibb.co/cvJJRSf/8.png)
+<!-- ![Escoger runtime](https://i.ibb.co/cvJJRSf/8.png) -->
 
 7. Si no tenemos un plan de app service creamos uno nuevo y le damos un nombre, luego seleccionamos el plan de app service, podemos usar el F1 que es gratis o el B1 que es el básico.
 
-![Crear plan servicio](https://i.ibb.co/nP9DFg5/9.png)
-![Plan básico](https://i.ibb.co/D7tw7pm/10.png)
+<!-- ![Crear plan servicio](https://i.ibb.co/nP9DFg5/9.png)
+![Plan básico](https://i.ibb.co/D7tw7pm/10.png) -->
 
 8. Nos preguntará si queremos crear un recurso Insights, omitimos esto.
 
-![Ignorar insights](https://i.ibb.co/w0pTDm1/11.png)
+<!-- ![Ignorar insights](https://i.ibb.co/w0pTDm1/11.png) -->
 
 9. Por último seleccionamos la región dónde queremos implementar nuestro app service.
 
-![Seleccionar región de despliegue](https://i.ibb.co/vc9DZWq/12.png)
+<!-- ![Seleccionar región de despliegue](https://i.ibb.co/vc9DZWq/12.png) -->
 
 10. Esperamos a que acabe la implementación, es un proceso automático, relajate y espera unos minutos.
 
