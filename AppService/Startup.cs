@@ -13,6 +13,9 @@ using Autofac.Extensions.DependencyInjection;
 
 using AppService.Core.Shared;
 using AppService.Infrastructure.Data;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+using Microsoft.AspNetCore.Http;
 
 namespace AppService
 {

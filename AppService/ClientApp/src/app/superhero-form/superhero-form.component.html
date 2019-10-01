@@ -1,0 +1,33 @@
+<h4> Crea un vengador </h4>
+<form
+    [formGroup]="formGroup" 
+    (ngSubmit)="createHero(formGroup.controls['name'].value, formGroup.controls['description'].value)" >
+    <div class="form-row">
+        <div class="col col-sm-4 form-group">
+            <input class="form-control" type="text" id="name" placeholder="Nombre" 
+                [formControl]="formGroup.controls['name']">
+            <small style="color:red;" *ngIf="formGroup.controls['name'].hasError('required')">El nombre es un campo obligatorio</small>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col col-sm-6 form-group">
+                <textarea class="form-control" type="file" id="imageFile"
+                    [formControl]="formGroup.controls['description']" placeholder="Descripción"></textarea>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col col-sm-6 form-group">
+            <label class="btn btn-outline-primary btn-sm">
+                Escoge una imagen... <input type="file" id="imageFile" (change)="onFileChanged($event)" [formControl]="formGroup.controls['imageUrl']" hidden #spy>
+            </label>
+            &nbsp;
+            <span class='badge badge-pill badge-primary' id="upload-file-info" *ngIf="spy.value != ''"> {{ spy.value }}</span>
+            <small style="color:red;" *ngIf="formGroup.controls['imageUrl'].hasError('required')">La imágen es obligatoria</small>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col col-sm-4 form-group">
+            <input class="btn btn-hero" type="submit" id="sendBtn" text="Save" [disabled]="!formGroup.valid">
+        </div>
+    </div>
+</form>
