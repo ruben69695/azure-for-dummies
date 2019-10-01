@@ -105,7 +105,7 @@ Lo que vamos a hacer ahora, es una pequeña demo de como subir una aplicación w
 
 ## Implementar usando Azure y GitHub
 
-1. Depositamos nuestro código en un repositorio git. Como bitbucket.org o github.com
+1. Depositamos nuestro código en un repositorio de GitHub
 
 2. Ingresamos en el portal de Azure y seleccionamos el servicio AppService
 
