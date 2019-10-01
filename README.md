@@ -58,12 +58,12 @@ Azure App Service nos permite crear y hospedar aplicaciones web, back-ends móvi
 - Dropbox
 
 ## Implementar en un AppService usando VSCode
-Lo que vamos hacer ahora, es una pequeña demo de como subir una aplicación web SPA desarrollada con Angular 8 y ASP.NET Core 2.2 en un nuevo AppService. Para ello vamos a usar Visual Studio Code y la extensión [Azure App Service](vscode:extension/ms-azuretools.vscode-azureappservice).
+Lo que vamos a hacer ahora, es una pequeña demo de como subir una aplicación web SPA desarrollada con Angular 8 y ASP.NET Core 2.2 en un nuevo AppService. Para ello vamos a usar Visual Studio Code y la extensión [Azure App Service](vscode:extension/ms-azuretools.vscode-azureappservice).
 
-1. Abrimos el proyecto con vscode y iniciamos sesión en nuestra cuenta de Microsoft dentro del IDE.
+1. Abrimos el proyecto con vscode e iniciamos sesión en nuestra cuenta de Microsoft dentro del IDE.
 
 <!-- ![Inicio de sesión](https://i.ibb.co/h9zLx0g/1.png)
-![Reedirección al navegador](https://i.ibb.co/J5P6QdM/2.png) -->
+![Redirección al navegador](https://i.ibb.co/J5P6QdM/2.png) -->
 
 2. Ahora, en el explorado de Azure App Service, le damos a la flecha azul para indicar una subida. Y luego le damos a "Create new web app".
 
@@ -95,13 +95,13 @@ Lo que vamos hacer ahora, es una pequeña demo de como subir una aplicación web
 
 <!-- ![Ignorar insights](https://i.ibb.co/w0pTDm1/11.png) -->
 
-9. Por último seleccionamos la región dónde queremos implementar nuestro app service.
+9. Por último seleccionamos la región donde queremos implementar nuestro app service.
 
 <!-- ![Seleccionar región de despliegue](https://i.ibb.co/vc9DZWq/12.png) -->
 
 10. Esperamos a que acabe la implementación, es un proceso automático, relajate y espera unos minutos.
 
-11. Listo, verás que el app service esta en el explorador de app service, podrás navegar a la web para visualizarla.
+11. Listo, verás que el app service está en el explorador de app service, podrás navegar a la web para visualizarla.
 
 ## Implementar en un App Service desde control de código fuente
 
@@ -117,21 +117,21 @@ Lo que vamos hacer ahora, es una pequeña demo de como subir una aplicación web
 
 6. Esto nos creará un App Service vacío sin ninguna aplicación implementada.
 
-7. Ahora tenemos que proceder a darle un origen de dónde sacará el código y realizara las implementaciones en la instancia.
+7. Ahora tenemos que proceder a darle un origen de donde sacará el código y realizara las implementaciones en la instancia.
 
 8. Nos dirigimos a nuestra nueva instancia app service en el portal de azure.
 
-9. En el menu lateral dentro del app service, tenemos que dirigrnos al apartado implementación y seleccionar la opción del menú "Centro de implementación".
+9. En el menú lateral dentro del app service, tenemos que dirigirnos al apartado implementación y seleccionar la opción del menú "Centro de implementación".
 
-10. Aquí nos saldrán distintos puntos de partida desde dónde poder implementar. Elegimos la opción que nos interese a nosotros. Pero en este ejemplo trabajaremos contra github.com
+10. Aquí nos saldrán distintos puntos de partida desde donde poder implementar. Elegimos la opción que nos interese a nosotros. Pero en este ejemplo trabajaremos contra github.com
 
 11. Tendremos que ingresar nuestra cuenta de github
 
-12. Ahora hay que selecciona el proveedor de compilcación seleccionaremos que lo haga el app service, en este ejemplo no entraremos a usar un pipeline de azure dev ops.
+12. Ahora hay que seleccionar el proveedor de compilaciones. Seleccionaremos que lo haga el app service, en este ejemplo no entraremos a usar los pipelines de azure dev ops.
 
-13. Configuramos el repositorio hy la rama que se va a compilar cuando haya cambios para que automáticamente saque la build para implementar el artefacto en el app service. 
+13. Configuramos el repositorio y la rama que se va a compilar, para que cuando haya cambios automáticamente genere la build y nos publique el artefacto para depositarlo en el app service. 
 
-14. Finalizamos y se creará un webhook entre azure y este repositorio en github que le notificará cuando hayna cambios en el repositorio y la rama seleccionada para crear la build y actualizar el contenido en el app service. Automáticamente al crear la implementacion realizará la primera build. Así que ya tendremos nuestra aplicación corriendo en el app service.
+14. Finalizamos, y esperamos a que cree el webhook con el job. Una vez lo cree automáticamente empezará a ejecutar el job que nos hará una build y publicará el artefacto en el app service.
 
 
 
