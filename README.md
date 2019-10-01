@@ -57,7 +57,7 @@ Azure App Service nos permite crear y hospedar aplicaciones web, back-ends móvi
 - Bitbucket
 - Dropbox
 
-## Implementar en un AppService usando VSCode
+## Implementar usando VSCode
 Lo que vamos a hacer ahora, es una pequeña demo de como subir una aplicación web SPA desarrollada con Angular 8 y ASP.NET Core 2.2 en un nuevo AppService. Para ello vamos a usar Visual Studio Code y la extensión [Azure App Service](vscode:extension/ms-azuretools.vscode-azureappservice).
 
 1. Abrimos el proyecto con vscode e iniciamos sesión en nuestra cuenta de Microsoft dentro del IDE.
@@ -103,7 +103,7 @@ Lo que vamos a hacer ahora, es una pequeña demo de como subir una aplicación w
 
 11. Listo, verás que el app service está en el explorador de app service, podrás navegar a la web para visualizarla.
 
-## Implementar en un App Service desde control de código fuente
+## Implementar desde GitHub
 
 1. Depositamos nuestro código en un repositorio git. Como bitbucket.org o github.com
 
