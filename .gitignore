@@ -391,6 +391,7 @@ public/
 .dynamodb/
 
 ### VisualStudioCode ###
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -404,3 +405,6 @@ public/
 .DS_Store
 
 # End of https://www.gitignore.io/api/node,angular,aspnetcore,visualstudiocode
+
+# .NET Core
+global.json
