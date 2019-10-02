@@ -133,10 +133,13 @@ Lo que vamos a hacer ahora, es una pequeña demo de como subir una aplicación w
 
 14. Finalizamos, y esperamos a que cree el webhook con el job. Una vez lo cree automáticamente empezará a ejecutar el job que nos hará una build y publicará el artefacto en el app service.
 
-
-
-
-
+## Planes de pago
+- Gatis y compartido
+- Básico
+- Estándar
+- Premium
+- Windows Premium
+- Aislado
 
 # Azure Functions
 Azure Functions es un servicio de proceso sin servidor que nos permite ejecutar código a petición sin necesidad de aprovisionar ni administrar explicitamente una infraestructura. Normalmente se usa para ejecutar scripts o fragmentos de código en respuesta a diversos eventos.
@@ -148,3 +151,19 @@ Azure Functions es un servicio de proceso sin servidor que nos permite ejecutar 
 - Blob
 - Cola
 
+## Lenguajes compatibles
+- C#
+- Javscript
+- Python
+- PHP
+- Typescript
+- Java
+- F#
+- Powershell
+- Bash
+![Lenguajes compatibles](https://azurecomcdn.azureedge.net/cvt-4120495975bc244e8ea56b04e7a2fdbde0933c79fc3ac498390557fe50547148/images/page/services/functions/value-prop-5.svg)
+
+## Planes de pago
+- Plan de consumo
+- Plan premium
+- Plan de Azure App Service
