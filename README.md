@@ -193,4 +193,4 @@ Necesitamos descargar la siguiente [extensión](vscode:extension/ms-azuretools.v
 
 11. Una vez completado, es hora de agregar el código que ejecutará la función. Le volvemos a dar a la flecha azul y seleccionamos el azure function creado previamente. Se cargará el código y listo. Ya podemos realizar la petición.
 
-> En Python solo esta dispnible el desarrollo de Azure Functions usando VSCode, pero para otras plataformas como Node o .NET Core se puede crear la función directamente desde el editor online de Azure.
+> En Python solo está dispnible el desarrollo de Azure Functions usando VSCode, pero para otras plataformas como Node o .NET Core se puede crear la función directamente desde el editor online de Azure.
