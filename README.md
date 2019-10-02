@@ -133,10 +133,13 @@ Lo que vamos a hacer ahora, es una pequeña demo de como subir una aplicación w
 
 14. Finalizamos, y esperamos a que cree el webhook con el job. Una vez lo cree automáticamente empezará a ejecutar el job que nos hará una build y publicará el artefacto en el app service.
 
-
-
-
-
+## Planes de pago
+- Gatis y compartido
+- Básico
+- Estándar
+- Premium
+- Windows Premium
+- Aislado
 
 # Azure Functions
 Azure Functions es un servicio de proceso sin servidor que nos permite ejecutar código a petición sin necesidad de aprovisionar ni administrar explicitamente una infraestructura. Normalmente se usa para ejecutar scripts o fragmentos de código en respuesta a diversos eventos.
@@ -148,3 +151,46 @@ Azure Functions es un servicio de proceso sin servidor que nos permite ejecutar 
 - Blob
 - Cola
 
+## Lenguajes compatibles
+- C#
+- Javscript
+- Python
+- PHP
+- Typescript
+- Java
+- F#
+- Powershell
+- Bash
+![Lenguajes compatibles](https://azurecomcdn.azureedge.net/cvt-4120495975bc244e8ea56b04e7a2fdbde0933c79fc3ac498390557fe50547148/images/page/services/functions/value-prop-5.svg)
+
+## Planes de pago
+- Plan de consumo
+- Plan premium
+- Plan de Azure App Service
+
+## Implementar usando VSCode
+Necesitamos descargar la siguiente [extensión](vscode:extension/ms-azuretools.vscode-azurefunctions) en nuestro vscode.
+
+1. Una vez descargada nos situamos en el explorado de Azure Functions y pulsamos en la flecha azul para realizar la subida.
+
+2. Creamos de forma avanzada una nueva función en azure, introducimos un nombre
+
+3. Seleccionamos el sistema operativo dónde se ejecutará la función
+
+4. Seleccionamos el plan, usaremos el plan de consumo
+
+5. Seleccionamos el lenguaje de la función
+
+6. Creamos un nuevo grupo de recursos para la función
+
+7. Seleccionamos una cuenta de almacenaje, si no tenemos la creamos y le ponemos un nombre
+
+8. Nos saltamos el añadir un recurso de Insights.
+
+9. Seleccionamos la región
+
+10. Empezará a crear la función y esperamos a que se complete
+
+11. Una vez completado, es hora de agregar el código que ejecutará la función. Le volvemos a dar a la flecha azul y seleccionamos el azure function creado previamente. Se cargará el código y listo. Ya podemos realizar la petición.
+
+> En Python solo esta dispnible el desarrollo de Azure Functions usando VSCode, pero para otros plataformas como Node o .NET Core se puede crear la función directamente desde el editor online de Azure.
