@@ -171,7 +171,7 @@ Azure Functions es un servicio de proceso sin servidor que nos permite ejecutar 
 ## Implementar usando VSCode
 Necesitamos descargar la siguiente [extensión](vscode:extension/ms-azuretools.vscode-azurefunctions) en nuestro vscode.
 
-1. Una vez descargada nos situamos en el explorado de Azure Functions y pulsamos en la flecha azul para realizar la subida.
+1. Una vez descargada nos situamos en el explorador de Azure Functions y pulsamos en la flecha azul para realizar la subida.
 
 2. Creamos de forma avanzada una nueva función en azure, introducimos un nombre
 
