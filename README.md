@@ -99,7 +99,7 @@ Lo que vamos a hacer ahora, es una pequeña demo de como subir una aplicación w
 
 <!-- ![Seleccionar región de despliegue](https://i.ibb.co/vc9DZWq/12.png) -->
 
-10. Esperamos a que acabe la implementación, es un proceso automático, relajate y espera unos minutos.
+10. Esperamos a que acabe la implementación, es un proceso automático, relájate y espera unos minutos.
 
 11. Listo, verás que el app service está en el explorador de app service, podrás navegar a la web para visualizarla.
 
